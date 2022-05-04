@@ -1,0 +1,24 @@
+structure:
+
+   ____ header
+  |
+app____ listSection________ dropDown 
+  |               |________ listItems
+  | 
+  |____ detailSection______ infoTab_______ infoTabItem
+                  |________ graphSection
+
+
+- create react app with typescript template
+- git init
+- create repo and link it to dir
+- install axios, sass and types
+- find free api with historical data ---> tradermade
+- setup section with list of available pairs or instruments
+    - section is initially derived from array with forex pairs, later I'll add a dropdown to choose between forex, crypto or indices, which
+      will list items accordingly. Have dataArrays for these three groups.
+- set up axios hook to call api for the relevant data
+- set up context provider to avoid prop drilling
+- set up details section, which consists of
+    - info tab with current price, %deviation of close yesterday, high and low of the day, high and low of the past 20 days.
+    - graph section with d3 generated graph
